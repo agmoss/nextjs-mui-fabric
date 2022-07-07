@@ -1,5 +1,5 @@
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
+import { AppBar as _AppBar } from '@mui/material';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -7,10 +7,10 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 
-const ButtonAppBar = () => {
+const AppBar = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <_AppBar position="static">
         <Toolbar>
           <IconButton
             size="large"
@@ -26,9 +26,9 @@ const ButtonAppBar = () => {
           </Typography>
           <Button color="inherit">Login</Button>
         </Toolbar>
-      </AppBar>
+      </_AppBar>
     </Box>
   );
 };
 
-export default ButtonAppBar;
+export default AppBar;

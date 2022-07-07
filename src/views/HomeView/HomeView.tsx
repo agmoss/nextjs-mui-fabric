@@ -1,15 +1,18 @@
 import React from 'react';
-import Box from '@mui/material/Box';
 import Main from '../../layouts/main';
-import { Typography } from '@mui/material';
+import Section from 'components/organisms/Section';
+import Hero from './components/Hero';
 
 const HomeView = (): JSX.Element => {
   return (
-    <Box sx={{ overflowX: 'hidden' }}>
-      <Main>
-        <Typography>HomeView</Typography>
-      </Main>
-    </Box>
+    <Main>
+      <Section>
+        <Hero />
+      </Section>
+      <Section variant="narrow">
+        <Hero />
+      </Section>
+    </Main>
   );
 };
 
