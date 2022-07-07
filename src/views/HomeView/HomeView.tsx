@@ -7,10 +7,13 @@ const HomeView = (): JSX.Element => {
   return (
     <Main>
       <Section>
-        <Hero />
+        <Hero variant="primary" />
       </Section>
-      <Section variant="narrow">
-        <Hero />
+      <Section>
+        <Hero variant="secondary" />
+      </Section>
+      <Section>
+        <Hero variant="primary" />
       </Section>
     </Main>
   );

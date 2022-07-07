@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, styled } from '@mui/material';
 
-interface SectionProps {
+interface ISectionProps {
   variant?: 'narrow' | 'fullWidth';
   disablePadding?: boolean;
   className?: string;
@@ -12,7 +12,7 @@ interface SectionProps {
 const Section = styled(Box, {
   name: 'Section',
   shouldForwardProp: (prop) => prop !== 'variant' && prop !== 'disablePadding',
-})<SectionProps>(({ theme, variant, disablePadding }) => ({
+})<ISectionProps>(({ theme, variant, disablePadding }) => ({
   width: '100%',
   margin: '0 auto',
   padding: theme.spacing(6, 2),

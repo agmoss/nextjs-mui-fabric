@@ -2,6 +2,7 @@
   "name": "nextjs-mui-fabric",
   "author": "Andrew Moss",
   "email": "andrew@m0ss.dev",
+  "description": "Instructional Nextjs project with a focus on composition over inheritance",
   "version": "0.0.1",
   "private": true,
   "scripts": {
