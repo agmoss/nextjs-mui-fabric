@@ -6,7 +6,7 @@ interface IDualProps {
   right: React.ReactNode;
 }
 
-const Container = ({ left, right }: IDualProps): JSX.Element => (
+const Dual = ({ left, right }: IDualProps): JSX.Element => (
   <Grid container spacing={4}>
     <Grid item xs={12} md={6}>
       {left}
@@ -17,4 +17,4 @@ const Container = ({ left, right }: IDualProps): JSX.Element => (
   </Grid>
 );
 
-export default Container;
+export default Dual;

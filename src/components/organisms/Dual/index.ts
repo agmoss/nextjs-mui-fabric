@@ -1,1 +1,1 @@
-export {default} from "./Dual"
+export { default } from './Dual';

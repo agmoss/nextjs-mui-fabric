@@ -20,7 +20,10 @@ const Main = ({ children }: React.PropsWithChildren<IMain>): JSX.Element => {
         <Divider />
       </main>
       <Container>
-        <Footer />
+        <Footer
+          title="nextjs-mui-fabric"
+          description="Instructional Nextjs project with a focus on composition over inheritance"
+        />
       </Container>
     </Box>
   );
