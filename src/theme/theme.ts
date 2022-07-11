@@ -1,13 +1,17 @@
 import { createTheme } from '@mui/material/styles';
 import { red } from '@mui/material/colors';
+import { purple, pink } from '@mui/material/colors';
 
 const theme = createTheme({
   palette: {
+    mode: 'dark',
     primary: {
-      main: '#556cd6',
+      main: purple[500],
+      light: purple[400],
     },
     secondary: {
-      main: '#19857b',
+      main: pink[500],
+      light: pink[400],
     },
     error: {
       main: red.A400,

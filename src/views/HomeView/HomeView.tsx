@@ -1,22 +1,31 @@
 import React from 'react';
+
 import Main from '../../layouts/main';
 import Section from 'components/organisms/Section';
-import Hero from './components/Hero';
+import ContentBlock from './components/ContentBlock';
+import Dual from 'components/organisms/Dual';
+import { withLayout } from 'layouts/main/withLayout';
 
 const HomeView = (): JSX.Element => {
   return (
-    <Main>
+    <>
       <Section>
-        <Hero variant="primary" />
+        <ContentBlock variant="primary" />
       </Section>
       <Section>
-        <Hero variant="secondary" />
+        <Dual
+          left={<ContentBlock variant="primary" />}
+          right={<ContentBlock variant="secondary" />}
+        />
       </Section>
       <Section>
-        <Hero variant="primary" />
+        <ContentBlock variant="secondary" />
       </Section>
-    </Main>
+      <Section>
+        <ContentBlock variant="primary" />
+      </Section>
+    </>
   );
 };
 
-export default HomeView;
+export default withLayout({ Layout: Main })(HomeView);
